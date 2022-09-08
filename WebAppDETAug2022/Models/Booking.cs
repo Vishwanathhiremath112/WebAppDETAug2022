@@ -7,6 +7,6 @@
 
         public DateTime BookingDate{ get; set; }
 
-        public int Qty { get; set; }
+      
     }
 }

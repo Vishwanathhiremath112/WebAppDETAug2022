@@ -1,0 +1,9 @@
+﻿No. of Pizzas available = @Model.Count
+<div class = "Table">
+    @foreach(Pizza p in @Model)
+    {
+        <tr>
+            <td>@p.Name</td>
+        </tr>
+    }
+</div>
