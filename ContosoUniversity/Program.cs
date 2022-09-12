@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MVCDemo.Data;
+using ContosoUniversity.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<MVCDemoContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MVCDemoContext") ?? throw new InvalidOperationException("Connection string 'MVCDemoContext' not found.")));
+builder.Services.AddDbContext<ContosoUniversityContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ContosoUniversityContext") ?? throw new InvalidOperationException("Connection string 'ContosoUniversityContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
